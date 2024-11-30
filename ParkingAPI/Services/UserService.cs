@@ -1,8 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
-using ParkingAPI.Models;
+﻿using ParkingAPI.Models;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 
 namespace ParkingAPI.Services
 {

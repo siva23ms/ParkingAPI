@@ -10,7 +10,7 @@ public class DatabaseHelper
         _connectionString = connectionString;
     }
 
-    public DataTable ExecuteQuery(string query, SqlParameter[] parameters = null)
+    public DataTable ExecuteQuery(string query, SqlParameter[] ? parameters = null)
     {
         DataTable table = new DataTable();
         using (SqlConnection myCon = new SqlConnection(_connectionString))
@@ -32,7 +32,7 @@ public class DatabaseHelper
         return table;
     }
 
-    public void ExecuteNonQuery(string query, SqlParameter[] parameters = null)
+    public void ExecuteNonQuery(string query, SqlParameter[] ? parameters = null)
     {
         using (SqlConnection myCon = new SqlConnection(_connectionString))
         {
